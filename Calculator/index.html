@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-container">
+            <p>Bill total</p>
+            <input id="priceChoose" class="search-bill search-1" type="search" placeholder="0.00" onkeyup="setBillUserChoice()"><span class="dollar">$</span></input>
+            <p>Tip</p>
+            <input id="tipChoose" class="search-bill search-2" type="search" placeholder="10" onkeyup="setBillUserChoice()"><span class="percentage">%</span></input>
+
+            <div class="total">
+                <p class="number-people">People</p>
+                <p class="total-people">Total per Person</p>
+            </div>
+
+            <div class="container-calcul">
+                <div class="calcul">
+                    <button id="buttonPlus" class="button-plus" value="button-plus" onclick="growUpPeople()">+</button>
+                    <p id="buttonNumber" class="number-people-added">1</p>
+                    <button id="buttonMinus" class="button-minus" value="button-minus" onclick="removePeople()">-</button>
+                </div>
+                <p id="totalPrice" class="container-price">&#x24;0.00</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
